@@ -1,38 +1,112 @@
-.App {
+.container {
+  min-width: 100%;
+  min-height:100%;
+  max-height: 100%;
+  background-color: #dfd2d4;
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+  padding-bottom: 100px;
+  grid-template-areas:
+  ". logincontent ."
+}
+
+.login-img {
+  height: 200px;
+  width:200px;
+  background-image: url('./images/ddlogo.png');
+  background-repeat: no-repeat;
+  align-self:center;
+  margin: 0 auto;
+}
+
+.login-wrapper {
+  grid-area: logincontent;
+  background-color: #F7F6FD;
+  height:auto;
+}
+
+.login-content {
+  background-color: #FFFFFF;
+  padding: 20px;
+  font-size: 30px;
   text-align: center;
+  border: 1px solid #e2d9db;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome {
+	color: #e90000;
+	font-family: "Avenir Next";
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 33px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.username-container .username-entry {
+  height: 60px;
+  width: 455px;
+  border: 1px solid #f5eff0;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 1px 3px 0 #c4bdbd, 0 2px 4px 0 rgba(212, 206, 207, 0.5);
+  text-indent: 150px;
+  color: #0e0d0d;
+	font-family: "Avenir Next";
+	font-size: 20px;
+  line-height: 22px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::placeholder { 
+  opacity: 1; 
+	color: #BCC0C6;
+	font-family: "Avenir Next";
+	font-size: 16px;
+  line-height: 62px;
+  text-align: left;
+  margin-left: 55px;
 }
 
-.App-link {
-  color: #61dafb;
+input.btn-login {
+  height: 45px;
+	width: 140px;
+	border: 1px solid #e21a1a;
+  background-color: #f00d0d;
+  text-align: center;
+  color: #FFFFFF;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	font-weight: 500;
+  line-height: 22px;
+  margin-top: 50px;
+  /* Add pointer on hover */
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input.btn-login:hover {
+    background: #d11c1c;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.username-container button {
+  height: 45px;
+  width: 140px;
+  border: 1px solid #83889E;
+  background-color: #F7F6FD;
+  font-family: "Avenir Next";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+  text-align: center;
+  margin-left: 22px;
+}
+
+.login-content p {
+  height: 52px;
+	color: #83889E;
+	font-family: "Avenir Next";
+	font-size: 12px;
+	font-weight: 500;
+  line-height: 23px;
+  margin-top: 10px;
+  color:crimson;
 }

@@ -1,0 +1,46 @@
+.message-group {
+    max-width: 50%;
+    justify-self: end;
+    margin-left: 96px;
+}
+
+.message-group:last-child {
+    margin-bottom: 25px;
+}
+
+.from-me {
+    justify-self: end;
+    margin-left: 75%;
+}
+
+.message-body {
+    display: inline-block;
+    height: auto;
+    min-height: 5px;
+    max-width: 300px;
+	border-radius: 20px;
+    justify-self: start;
+}
+.from-me .message-body {
+    background-color: #DC143C;
+}
+.group-me .message-body {
+    background-color: #ffffff;
+}
+.message-body p {
+	color: #4A4A4A;
+	font-family: "Avenir Next";
+	font-size: 20px;
+	font-weight: 500;
+    line-height: 22px;
+    margin: 0px;
+    padding: 10px 23px;
+}
+.from-me .message-body p{
+    color:#ffffff;
+}
+
+.username h4{
+    color: #000000;
+    font-size: 15px;
+}

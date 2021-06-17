@@ -1,0 +1,84 @@
+.nav-container {
+    grid-area: nav;
+    background-color:#DC143C;
+    backdrop-filter: blur(12px);
+}   
+
+.profile-info {
+    width: auto;
+    height: auto;
+    margin-top: 42px;
+    margin-left: 30px;
+}
+
+.user {
+    height: 28px;
+	width: 120px;
+	color: #FFFFFF;
+	font-family: "Avenir Next";
+	font-size: 25px;
+	font-weight: 500;
+    line-height: 22px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-left: 65px;
+}
+
+.timer {
+    height: 28px;
+	width: 150px;
+	color: #FFFFFF;
+	font-family: "Avenir Next";
+	font-size: 15px;
+	font-weight: 500;
+    line-height: 16px;
+    margin-top: 3px;
+    margin-left:50px;
+}
+
+.timer span {
+    font-weight: 700;
+}
+
+.chatrooms-title {
+    height: 49px;
+	width: 271px;
+	color: #FFFFFF;
+	font-family: "Avenir Next";
+	font-size: 30px;
+	font-weight: bold;
+    line-height: 55px;
+    margin-left: 65px;
+}
+
+.rooms-container {
+    margin-top: 83px;
+    margin-left: 25px;
+}
+
+.log-out {
+    width: 100%;
+    height: auto;
+    padding-left: 25px;
+    margin-top: 180px;
+}
+
+.log-out a {
+    height: 30px;
+	width: 120px;
+	color: #FFFFFF;
+	font-family: "Avenir Next";
+	font-size: 20px;
+	font-weight: 500;
+    line-height: 22px;
+    margin-left: 40px;
+    vertical-align: top;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.log-out a:hover {
+    color: #42A4F5;
+    transform: translateY(-3px);
+}

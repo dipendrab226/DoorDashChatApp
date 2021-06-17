@@ -1,0 +1,13 @@
+.chatapp {
+    position:fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #FB9AFE;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: 1fr 400px 1fr ;
+    grid-template-areas:
+      "nav roominfo"
+      "nav messages"
+      "nav messageinput "
+  }

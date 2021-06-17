@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# DoorDash Frontend Interview Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- *This is a React based Chat Applicaiton*
 
-## Available Scripts
+# Instructions on running the application
 
-In the project directory, you can run:
+## 1. Node 
+- Node installation required with version ` v12.18.0 ` or greater. 
 
-### `npm start`
+## 2. Dependencies
+- To install all the required dependencies run `npm install`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 3. Running the server
+- To run the application, first run the provided server as `node server.js`
+- Similarly, also run the added websocket server as `node websocketserver.js`
+- Added the websocket server to communicate with 2 users in 2 different browser tabs, to show the new chat messages in both tabs. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 4. Serving the Application
+- Run `npm start` to start the react script and serve the application from `/public`.
 
-### `npm test`
+# Design Specs
+- All the following design specification from ` ./spec ` directory were met during development process:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ## Set Username
+    - The first screen you should see is the "login" screen. 
+    - A user can type a username they'll use, and if they provide some string and hit "Join the DoorDash Chat!" button, we'll save their username for when they add new messages.
 
-### `npm run build`
+    ## Chat
+    - When you've submitted a username, we'll load up the chat interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    On the left, we have:
+    * user info
+        * username
+        * time that user has been online
+        * list of rooms available
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    On the right, we have the selected chat room. There, we show:
+    * room information
+        * room name,
+        * list of usernames of users in the room
+    * messages
+        * message text
+        * username of the user that posted it
+        * newest messages on the bottom, older on the top
+        * scroll the view to see older messages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Design System
+- For the design system, Zeplin was utilized to develop the prototypes and assets.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
