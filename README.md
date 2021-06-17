@@ -44,6 +44,5 @@
         * newest messages on the bottom, older on the top
         * scroll the view to see older messages
 
-# Design System
-- For the design system, Zeplin was utilized to develop the prototypes and assets.
+
 
